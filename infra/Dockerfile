@@ -25,6 +25,10 @@ RUN useradd -ms /bin/bash coder \
  && echo "coder ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 USER coder
+
+RUN mkdir "/home/coder/project"
+RUN touch "/home/coder/project/main.py"
+
 WORKDIR /home/coder
 
 # Register default Python kernel for Jupyter / VS Code
