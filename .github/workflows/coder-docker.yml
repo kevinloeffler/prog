@@ -24,7 +24,7 @@ jobs:
 
       - name: Build image
         run: |
-          docker build -t $REGISTRY/${IMAGE_NAME}:latest .
+          docker build -t $REGISTRY/${IMAGE_NAME}:latest infra/
 
       - name: Push image
         run: |
