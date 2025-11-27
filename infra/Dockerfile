@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Basic tools and Python
 RUN apt-get update \
  && apt-get install -y \
-    python3 \
+    python3-tk \
     python3-pip \
     git \
     curl \
