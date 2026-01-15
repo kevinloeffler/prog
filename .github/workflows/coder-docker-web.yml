@@ -1,4 +1,4 @@
-name: Build docker coder image
+name: Build docker coder image for web
 
 on:
   workflow_dispatch:
