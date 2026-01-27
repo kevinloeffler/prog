@@ -17,7 +17,9 @@ RUN useradd -ms /bin/bash coder \
 
 USER coder
 
-RUN mkdir -p "/home/coder"
+RUN mkdir -p "/home/coder/web"
+WORKDIR /home/coder/web
+
 RUN cat <<EOF > index.html
 <!DOCTYPE html>
 <html>
@@ -28,6 +30,4 @@ RUN cat <<EOF > index.html
 </body>
 </html>
 EOF
-
-WORKDIR /home/coder
 
