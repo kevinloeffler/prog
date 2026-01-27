@@ -17,7 +17,7 @@ RUN useradd -ms /bin/bash coder \
 
 USER coder
 
-RUN mkdir "/home/coder"
+RUN mkdir -p "/home/coder"
 RUN cat <<EOF > index.html
 <!DOCTYPE html>
 <html>
