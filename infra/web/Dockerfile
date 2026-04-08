@@ -20,6 +20,8 @@ USER coder
 RUN mkdir -p "/home/coder/web"
 WORKDIR /home/coder/web
 
+RUN curl -L https://raw.githubusercontent.com/kevinloeffler/dew/refs/heads/main/src/dew.js -o dew.js
+
 RUN cat <<EOF > index.html
 <!DOCTYPE html>
 <html>
